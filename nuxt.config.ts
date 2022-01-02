@@ -26,6 +26,8 @@ export default defineNuxtConfig({
       class: "debug-screens",
     },
   },
+  serverMiddleware: [{ path: "/api", handler: "~/server/lib/index.ts" }],
+
   buildModules: [],
   css: ["~/assets/css/main.css"],
   // components: ["~/components", "~/components/ui", "~/components/utils"],

@@ -21,6 +21,7 @@
     "vue-gtag-next": "^1.14.0"
   },
   "dependencies": {
-    "@prisma/client": "3.7.0"
+    "@prisma/client": "3.7.0",
+    "express": "^4.17.2"
   }
 }
