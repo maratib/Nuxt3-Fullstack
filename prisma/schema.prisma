@@ -12,8 +12,8 @@ datasource db {
 
 model User {
   id            Int            @id @default(autoincrement())
-  email         String         @unique @db.VarChar(150)
-  secret        String         @default("SGVsbG8gd29ybGQ=")
+  email         String         @unique @db.VarChar(100)
+  password      String         @db.VarChar(150)
   role          Role           @default(USER)
   refreshTokens RefreshToken[]
 

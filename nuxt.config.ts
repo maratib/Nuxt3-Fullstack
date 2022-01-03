@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   },
   serverMiddleware: [{ path: "/api", handler: "~/server/lib/index.ts" }],
 
-  buildModules: [],
+  buildModules: ["@pinia/nuxt"],
   css: ["~/assets/css/main.css"],
   // components: ["~/components", "~/components/ui", "~/components/utils"],
   build: {
